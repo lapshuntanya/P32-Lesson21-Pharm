@@ -77,5 +77,5 @@ void Medicine::showInfo() const{
 	case syrop:	cout << "syrop.\n";		break;
 	}
 	cout << "Price: " << _price << " UAH\n";
-	cout << "Country: " << _country << " UAH\n";
+	cout << "Country: " << _country << "\n";
 }
