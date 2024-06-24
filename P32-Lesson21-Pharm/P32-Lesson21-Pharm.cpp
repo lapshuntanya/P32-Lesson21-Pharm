@@ -9,6 +9,15 @@ int main()
     a.showInfo();
     b.showInfo();
     c.showInfo();
+    cout << "+++++++++++++++++++++++++++++\n";
+
+    Medicine e = b; //"Aspirin"
+    //e-this   =  b-obj
+    e.setTitle("Aspirin Forte");
+
+    b.showInfo();
+    e.showInfo();
+
 
 }
 

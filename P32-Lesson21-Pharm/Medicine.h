@@ -18,8 +18,8 @@ class Medicine
 
 public:
 	Medicine();
-	Medicine(const char* title, TYPES type, float price,
-		const char* country);
+	Medicine(const char* title, TYPES type, float price,const char* country);
+	Medicine(const Medicine& obj); //Конструктор копіювання
 	~Medicine();
 
 	void setTitle(const char* title);
