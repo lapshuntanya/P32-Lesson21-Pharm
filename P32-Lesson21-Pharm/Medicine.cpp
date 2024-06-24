@@ -36,6 +36,24 @@ Medicine::Medicine(const Medicine& obj)
 	strcpy_s(this->_country, sizeC, obj._country);
 }
 
+Medicine& Medicine::operator=(const Medicine& obj)
+{
+	this->~Medicine();
+
+	int sizeT = strlen(obj._title) + 1;
+	this->_title = new char[sizeT];
+	strcpy_s(this->_title, sizeT, obj._title);
+
+	this->_type = obj._type;
+	this->_price = obj._price;
+
+	int sizeC = strlen(obj._country) + 1;
+	this->_country = new char[sizeC];
+	strcpy_s(this->_country, sizeC, obj._country);
+
+	return *this;
+}
+
 Medicine::~Medicine()
 {
 	delete[] _title;

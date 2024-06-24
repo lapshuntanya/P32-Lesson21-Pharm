@@ -11,13 +11,19 @@ int main()
     c.showInfo();
     cout << "+++++++++++++++++++++++++++++\n";
 
-    Medicine e = b; //"Aspirin"
+    Medicine e = b; //"Aspirin" -> Copy Constructor
     //e-this   =  b-obj
     e.setTitle("Aspirin Forte");
 
     b.showInfo();
     e.showInfo();
+    cout << "+++++++++++++++++++++++++++++\n";
 
+    a = c; //Operator =
+    a.setCountry("France");
+
+    a.showInfo();
+    c.showInfo();
 
 }
 

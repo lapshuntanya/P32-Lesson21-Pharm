@@ -20,6 +20,7 @@ public:
 	Medicine();
 	Medicine(const char* title, TYPES type, float price,const char* country);
 	Medicine(const Medicine& obj); //Конструктор копіювання
+	Medicine& operator = (const Medicine& obj); //Оператор присвоювання
 	~Medicine();
 
 	void setTitle(const char* title);
