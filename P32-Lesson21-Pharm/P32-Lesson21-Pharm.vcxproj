@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Medicine.cpp" />
     <ClCompile Include="P32-Lesson21-Pharm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Medicine.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
